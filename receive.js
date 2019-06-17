@@ -1,12 +1,13 @@
 var stompit = require('stompit');
 
 var connectParams = {
-    host: 'localhost',
-    port: 61613,
+    host: '<MY_MQ_HOSTNAME>',
+    port: 61614,
+    ssl: true,
     connectHeaders:{
-        host: 'localhost',
-        login: 'admin',
-        passcode: 'password'
+        host: '<MY_MQ_HOSTNAME>',
+        login: '<MY_MQ_LOGIN>',
+        passcode: '<MY_MQ_PASSWORD>'
     }
 };
 
