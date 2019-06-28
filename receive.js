@@ -19,7 +19,7 @@ stompit.connect(connectParams, function(error, client){
     }
     
     var subscribeParams = {
-       'destination': '/path/to/endpoint',
+       'destination': '/testqueue',
        'ack': 'client-individual'
     };
     
