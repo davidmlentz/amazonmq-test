@@ -19,7 +19,7 @@ stompit.connect(connectParams, function(error, client){
     }
 
     var sendParams = {
-        'destination': '/testqueue',
+        'destination': 'testqueue',
         'content-type': 'application/json'
     };
 
