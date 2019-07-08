@@ -20,8 +20,7 @@ stompit.connect(connectParams, function(error, client){
 
     var sendParams = {
         'destination': 'testqueue',
-        'content-type': 'application/json',
-        'persistent': 'true'
+        'content-type': 'application/json'
     };
 
     var frame = client.send(sendParams);
