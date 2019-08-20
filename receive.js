@@ -28,9 +28,8 @@ stompit.connect(connectParams, function(error, client){
     client.subscribe(subscribeParams, function(error, message){
         
         // Don't consume more than one message
-//        if(consuming){
-//            return;
-//        }
+        if(consuming){
+            return;
         
         consuming = true;
         
@@ -45,7 +44,7 @@ stompit.connect(connectParams, function(error, client){
         
         message.on('end', function(){
             client.ack(message);
-//            client.disconnect();
+            client.disconnect();
         });
     });
 });
