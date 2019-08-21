@@ -30,6 +30,7 @@ stompit.connect(connectParams, function(error, client){
         // Don't consume more than one message
         if(consuming){
             return;
+        }
         
         consuming = true;
         
